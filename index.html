@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kitebyte</title>
+<meta name="description" content="Kitebyte makes small, private Android apps. No ads, no tracking, no accounts.">
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<style>
+  :root { --text: #1a1a1b; --muted: #576f76; --accent: #d83a00; --accent-solid: #ff4500; --bg: #ffffff;
+          --card: #f7f7f8; --rule: #e5e5e5; }
+  @media (prefers-color-scheme: dark) {
+    :root { --text: #e8e8e8; --muted: #9fb0b5; --accent: #ff7a45; --bg: #121212; --card: #1c1c1c; --rule: #2a2a2a; }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--text);
+         font: 16px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  main { max-width: 720px; margin: 0 auto; padding: 48px 16px 64px; }
+  a { color: var(--accent); }
+  header h1 { font-size: 2.4rem; letter-spacing: -0.02em; margin: 0; }
+  header p { color: var(--muted); font-size: 1.15rem; margin: 4px 0 0; }
+  h2 { font-size: 1.15rem; margin: 40px 0 12px; }
+  .app { display: flex; gap: 20px; align-items: flex-start; background: var(--card); border: 1px solid var(--rule);
+         border-radius: 16px; padding: 20px; }
+  .app img { width: 72px; height: 72px; border-radius: 16px; flex: none; }
+  .app h3 { margin: 0 0 4px; font-size: 1.2rem; }
+  .app p { margin: 0 0 10px; }
+  .app ul { margin: 0 0 10px; padding-left: 20px; }
+  .status { display: inline-block; font-size: 0.85rem; color: var(--muted); border: 1px solid var(--rule);
+            border-radius: 999px; padding: 2px 10px; margin-bottom: 10px; }
+  .links { display: flex; flex-wrap: wrap; gap: 6px 16px; font-size: 0.95rem; }
+  .support { display: inline-block; background: var(--accent-solid); color: #fff; text-decoration: none; font-weight: 600;
+             padding: 10px 20px; border-radius: 999px; }
+  .support:hover { filter: brightness(0.95); }
+  footer { margin-top: 48px; padding-top: 16px; border-top: 1px solid var(--rule); color: var(--muted); font-size: 0.9rem; }
+  @media (max-width: 480px) { .app { flex-direction: column; } }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <h1>Kitebyte</h1>
+    <p>Small, private Android apps. No ads, no tracking, no accounts.</p>
+  </header>
+
+  <h2>Apps</h2>
+  <section class="app">
+    <img src="thread-copier.png" alt="Thread Copier icon">
+    <div>
+      <h3>Thread Copier</h3>
+      <span class="status">Coming soon to Google Play</span>
+      <p>Share a Reddit thread and get clean text to paste into any AI chat.</p>
+      <ul>
+        <li>Tap Share, pick Thread Copier, and the post and comments land on your clipboard.</li>
+        <li>Runs in the background on your phone. No browser pops up.</li>
+        <li>Nothing is collected. Threads go straight from Reddit to your device.</li>
+      </ul>
+      <div class="links">
+        <a href="threadcopier-privacy/">Privacy policy</a>
+      </div>
+    </div>
+  </section>
+
+  <h2>Support Kitebyte</h2>
+  <p>The apps are free. If one saves you time, a coffee helps keep them going.</p>
+  <p><a class="support" href="https://ko-fi.com/kitebyteapps">Buy Kitebyte a coffee</a></p>
+
+  <h2>Contact</h2>
+  <p><a href="mailto:kitebyte.apps@gmail.com">kitebyte.apps@gmail.com</a></p>
+
+  <footer>
+    Thread Copier is an independent app and is not affiliated with, endorsed by or sponsored by Reddit, Inc.
+  </footer>
+</main>
+</body>
+</html>
